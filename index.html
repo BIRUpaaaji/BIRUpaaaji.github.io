@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Birat — Developer & Designer</title>
+  <title>Birat Thakali — Data & Business Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Top Navigation -->
+  <!-- Top Nav -->
   <nav class="topnav" id="topnav">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">Birat<span class="logo-dot">.</span></a>
+      <a href="#hero" class="nav-logo">BT<span class="logo-dot">.</span></a>
       <ul class="nav-links">
         <li><a href="#about" class="nav-link" data-section="about">About</a></li>
         <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
         <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
         <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
       </ul>
@@ -25,60 +26,61 @@
         <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
           <span id="themeIcon">☀</span>
         </button>
-        <a href="#contact" class="nav-cta">Hire me</a>
+        <a href="mailto:birat-thakali@hotmail.com" class="nav-cta">Hire me</a>
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
       <a href="#about" class="mob-link">About</a>
       <a href="#skills" class="mob-link">Skills</a>
+      <a href="#experience" class="mob-link">Experience</a>
       <a href="#projects" class="mob-link">Projects</a>
       <a href="#contact" class="mob-link">Contact</a>
-      <a href="#contact" class="mob-link mob-cta">Hire me</a>
+      <a href="mailto:birat-thakali@hotmail.com" class="mob-link mob-cta">Hire me</a>
     </div>
   </nav>
 
   <!-- Hero -->
   <section id="hero" class="section hero">
     <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <div class="hero-badge reveal">
-        <span class="badge-dot"></span>
-        Open to opportunities
+    <div class="hero-wrap">
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Open to opportunities · Sydney, AU
+        </div>
+        <h1 class="hero-heading reveal d1">
+          Birat<br/><span class="accent">Thakali</span>
+        </h1>
+        <p class="hero-role reveal d2">Business &amp; Data Analyst</p>
+        <p class="hero-sub reveal d3">
+          Turning operational and customer data into decisions that actually matter. SQL, Tableau, Power BI — and the curiosity to dig deeper.
+        </p>
+        <div class="hero-actions reveal d4">
+          <a href="#experience" class="btn-primary">View Experience</a>
+          <a href="mailto:birat-thakali@hotmail.com" class="btn-ghost">Get in touch →</a>
+        </div>
       </div>
-      <h1 class="hero-heading reveal d1">
-        <span class="line">Full-Stack</span>
-        <span class="line accent">Developer</span>
-        <span class="line">& Designer</span>
-      </h1>
-      <p class="hero-sub reveal d2">
-        I craft precise, performant digital products — from concept to deployment. Based in Kathmandu, working globally.
-      </p>
-      <div class="hero-actions reveal d3">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#contact" class="btn-ghost">Let's talk →</a>
+      <div class="hero-metrics reveal d3">
+        <div class="metric">
+          <span class="metric-num" data-count="4">0</span><span class="metric-unit">+</span>
+          <span class="metric-label">Years exp.</span>
+        </div>
+        <div class="metric-sep"></div>
+        <div class="metric">
+          <span class="metric-num" data-count="200">0</span><span class="metric-unit">+</span>
+          <span class="metric-label">Clients onboarded</span>
+        </div>
+        <div class="metric-sep"></div>
+        <div class="metric">
+          <span class="metric-num" data-count="52">0</span><span class="metric-unit">%</span>
+          <span class="metric-label">Max savings found</span>
+        </div>
       </div>
     </div>
-    <div class="hero-metrics reveal d2">
-      <div class="metric">
-        <span class="metric-num" data-count="3">0</span><span class="metric-unit">yr</span>
-        <span class="metric-label">Experience</span>
-      </div>
-      <div class="metric-sep"></div>
-      <div class="metric">
-        <span class="metric-num" data-count="20">0</span><span class="metric-unit">+</span>
-        <span class="metric-label">Projects</span>
-      </div>
-      <div class="metric-sep"></div>
-      <div class="metric">
-        <span class="metric-num" data-count="15">0</span><span class="metric-unit">+</span>
-        <span class="metric-label">Clients</span>
-      </div>
-    </div>
-    <div class="scroll-hint reveal d4">
+    <div class="scroll-hint reveal d5">
       <div class="scroll-line"></div>
       <span>Scroll</span>
     </div>
@@ -87,43 +89,43 @@
   <!-- About -->
   <section id="about" class="section about">
     <div class="container">
-      <div class="section-label reveal">About</div>
+      <span class="section-label reveal">About</span>
       <div class="about-grid">
         <div class="about-left reveal d1">
-          <h2 class="section-heading">Engineering<br/><em>with intent.</em></h2>
+          <h2 class="section-heading">Insight-driven.<br/><em>People-first.</em></h2>
+          <div class="about-tags">
+            <span class="tag">📍 Chatswood, Sydney</span>
+            <span class="tag">🎓 MBus Analytics, Macquarie</span>
+            <span class="tag">🇳🇵 Originally from Kathmandu</span>
+          </div>
         </div>
         <div class="about-right">
           <p class="about-body reveal d2">
-            I'm Birat — a full-stack developer who obsesses over the intersection of clean code and compelling design. I've shipped products used by thousands, built design systems from scratch, and collaborated with startups across three continents.
+            I'm a business and data analyst with a background that spans investment analysis in Nepal, 3D reality capture in construction, and field business development across Sydney. That range isn't accidental — I'm genuinely curious about how businesses work, and data is my tool for understanding them.
           </p>
           <p class="about-body reveal d3">
-            My background in computer science grounds every project in solid architecture, while a deep interest in visual communication ensures the result is never just functional — it's beautiful.
+            Currently completing the ACS Professional Year Program while working at Energy Australia, where I analyse electricity tariffs and usage data daily to find savings for SME and residential clients. My Master's in Business Analytics from Macquarie sharpened my skills in data visualisation, predictive analysis and business intelligence.
           </p>
-          <div class="about-tags reveal d4">
-            <span class="tag">Kathmandu, NP</span>
-            <span class="tag">BSc Computer Science</span>
-            <span class="tag">Available remotely</span>
-          </div>
-          <div class="about-values reveal d5">
+          <div class="about-values reveal d4">
             <div class="value-item">
               <div class="value-num">01</div>
               <div>
-                <strong>Design-led engineering</strong>
-                <p>Good design isn't decoration — it's function.</p>
+                <strong>Data without context is noise</strong>
+                <p>I focus on the "so what" — translating findings into decisions stakeholders can act on.</p>
               </div>
             </div>
             <div class="value-item">
               <div class="value-num">02</div>
               <div>
-                <strong>Performance by default</strong>
-                <p>Fast is a feature. I optimize from the start.</p>
+                <strong>Comfort with complexity</strong>
+                <p>From NEPSE equities to port congestion schedules — I thrive in messy, real-world datasets.</p>
               </div>
             </div>
             <div class="value-item">
               <div class="value-num">03</div>
               <div>
-                <strong>Clear communication</strong>
-                <p>Code and people both need good documentation.</p>
+                <strong>Cross-functional communicator</strong>
+                <p>I've briefed engineers, managed clients, and trained staff — clarity is a skill I practice daily.</p>
               </div>
             </div>
           </div>
@@ -135,42 +137,124 @@
   <!-- Skills -->
   <section id="skills" class="section skills">
     <div class="container">
-      <div class="section-label reveal">Expertise</div>
-      <h2 class="section-heading reveal d1">Stack &amp; <em>skills.</em></h2>
+      <span class="section-label reveal">Skills</span>
+      <h2 class="section-heading reveal d1">Stack &amp; <em>toolkit.</em></h2>
       <div class="skills-grid">
         <div class="skill-group reveal d1">
-          <div class="skill-group-label">Frontend</div>
+          <div class="skill-group-label">Analytics &amp; BI</div>
           <div class="skill-list">
-            <div class="skill-row"><span>HTML / CSS</span><div class="skill-bar"><div class="skill-fill" data-w="95"></div></div><span class="skill-pct">95%</span></div>
-            <div class="skill-row"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div><span class="skill-pct">88%</span></div>
-            <div class="skill-row"><span>React</span><div class="skill-bar"><div class="skill-fill" data-w="83"></div></div><span class="skill-pct">83%</span></div>
-            <div class="skill-row"><span>Vue.js</span><div class="skill-bar"><div class="skill-fill" data-w="70"></div></div><span class="skill-pct">70%</span></div>
+            <div class="skill-row"><span>SQL</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div><span class="skill-pct">88%</span></div>
+            <div class="skill-row"><span>Tableau</span><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div><span class="skill-pct">85%</span></div>
+            <div class="skill-row"><span>Power BI</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div><span class="skill-pct">80%</span></div>
+            <div class="skill-row"><span>Excel</span><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div><span class="skill-pct">92%</span></div>
           </div>
         </div>
         <div class="skill-group reveal d2">
-          <div class="skill-group-label">Backend</div>
+          <div class="skill-group-label">Programming</div>
           <div class="skill-list">
-            <div class="skill-row"><span>Node.js</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div><span class="skill-pct">80%</span></div>
-            <div class="skill-row"><span>Python</span><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div><span class="skill-pct">75%</span></div>
-            <div class="skill-row"><span>PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-w="72"></div></div><span class="skill-pct">72%</span></div>
-            <div class="skill-row"><span>REST APIs</span><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div><span class="skill-pct">90%</span></div>
+            <div class="skill-row"><span>Python</span><div class="skill-bar"><div class="skill-fill" data-w="72"></div></div><span class="skill-pct">72%</span></div>
+            <div class="skill-row"><span>RStudio</span><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div><span class="skill-pct">65%</span></div>
+            <div class="skill-row"><span>Data Cleaning</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div><span class="skill-pct">88%</span></div>
+            <div class="skill-row"><span>Statistical Analysis</span><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div><span class="skill-pct">75%</span></div>
           </div>
         </div>
         <div class="skill-group reveal d3">
-          <div class="skill-group-label">Tools</div>
+          <div class="skill-group-label">Business</div>
           <div class="skill-list">
-            <div class="skill-row"><span>Git / GitHub</span><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div><span class="skill-pct">92%</span></div>
-            <div class="skill-row"><span>Figma</span><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div><span class="skill-pct">78%</span></div>
-            <div class="skill-row"><span>Docker</span><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div><span class="skill-pct">65%</span></div>
-            <div class="skill-row"><span>Firebase</span><div class="skill-bar"><div class="skill-fill" data-w="74"></div></div><span class="skill-pct">74%</span></div>
+            <div class="skill-row"><span>CRM (Jarvis)</span><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div><span class="skill-pct">85%</span></div>
+            <div class="skill-row"><span>Stakeholder Comms</span><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div><span class="skill-pct">90%</span></div>
+            <div class="skill-row"><span>Investment Analysis</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div><span class="skill-pct">80%</span></div>
+            <div class="skill-row"><span>Agile / Collaboration</span><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div><span class="skill-pct">78%</span></div>
           </div>
         </div>
       </div>
       <div class="tech-pills reveal d4">
-        <span class="pill">TypeScript</span><span class="pill">Next.js</span><span class="pill">Tailwind CSS</span>
-        <span class="pill">GraphQL</span><span class="pill">Prisma</span><span class="pill">AWS</span>
-        <span class="pill">Redis</span><span class="pill">Vercel</span><span class="pill">Webpack</span>
-        <span class="pill">Jest</span><span class="pill">Cypress</span><span class="pill">Linux</span>
+        <span class="pill">SQL</span>
+        <span class="pill">Excel (Pivot Tables)</span>
+        <span class="pill">Tableau</span>
+        <span class="pill">Power BI</span>
+        <span class="pill">Python</span>
+        <span class="pill">RStudio</span>
+        <span class="pill">Jarvis CRM</span>
+        <span class="pill">Matterport</span>
+        <span class="pill">Agile</span>
+        <span class="pill">Data Visualisation</span>
+        <span class="pill">Predictive Analysis</span>
+        <span class="pill">Business Intelligence</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <span class="section-label reveal">Experience</span>
+      <h2 class="section-heading reveal d1">Where I've <em>worked.</em></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-left">
+            <span class="tl-date">Sept 2025 – Present</span>
+            <span class="tl-tag current">Current</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="tl-role">Business Development Manager</h3>
+            <span class="tl-company">Energy Australia / Creative Activation · Sydney</span>
+            <ul class="tl-bullets">
+              <li>Engage 25+ SME owners and residential customers daily via targeted field visits</li>
+              <li>Analyse 50+ electricity bills monthly — identifying savings of up to <strong>52%</strong> on tariff structures</li>
+              <li>Ranked <strong>Top BDM in NSW</strong> (November) and awarded <strong>Best Success Story (March)</strong></li>
+              <li>Manage full onboarding: contracts, eligibility checks and CRM updates via Jarvis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal d1">
+          <div class="timeline-left">
+            <span class="tl-date">Jul 2024 – Aug 2025</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="tl-role">Reality Capture Technician</h3>
+            <span class="tl-company">Insitu Construction Group · Sydney</span>
+            <ul class="tl-bullets">
+              <li>Captured 3D scans across 30+ construction sites using Matterport platform</li>
+              <li>Delivered virtual walkthroughs used by project managers for remote site review</li>
+              <li>Maintained high data accuracy via manual verification and spatial measurement checks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal d2">
+          <div class="timeline-left">
+            <span class="tl-date">Jul 2023 – Aug 2025</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="tl-role">Store Manager</h3>
+            <span class="tl-company">Crust Pizza · Davidson, Sydney</span>
+            <ul class="tl-bullets">
+              <li>Led a team of 15+ staff during peak periods, overseeing <strong>AUD 8,000+</strong> weekend revenue</li>
+              <li>Managed inventory across 50+ items and POS reconciliation</li>
+              <li>Handled customer escalations and maintained service quality under high volume</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal d3">
+          <div class="timeline-left">
+            <span class="tl-date">Nov 2021 – Jun 2023</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="tl-role">Investment Analyst / Associate</h3>
+            <span class="tl-company">Prabhu Capital · Kathmandu, Nepal</span>
+            <ul class="tl-bullets">
+              <li>Researched 20–30 listed companies across banking, hydropower, insurance and finance</li>
+              <li>Built 10–15 daily PMS portfolio reports using Excel and Tableau on NEPSE equities</li>
+              <li>Onboarded 200+ investment clients end-to-end — queries, documentation and account setup</li>
+              <li>Collaborated with 10+ external stakeholders: brokers, bankers, lawyers and accountants</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -178,89 +262,102 @@
   <!-- Projects -->
   <section id="projects" class="section projects">
     <div class="container">
-      <div class="section-label reveal">Work</div>
-      <div class="projects-header">
-        <h2 class="section-heading reveal d1">Selected <em>projects.</em></h2>
-        <div class="project-filter reveal d2">
-          <button class="f-btn active" data-filter="all">All</button>
-          <button class="f-btn" data-filter="web">Web</button>
-          <button class="f-btn" data-filter="mobile">Mobile</button>
-          <button class="f-btn" data-filter="design">Design</button>
-        </div>
-      </div>
-      <div class="projects-list" id="projectsList">
-        <article class="project-item reveal" data-cat="web">
+      <span class="section-label reveal">Projects</span>
+      <h2 class="section-heading reveal d1">Selected <em>work.</em></h2>
+      <div class="projects-list">
+
+        <article class="project-item reveal">
           <div class="project-num">01</div>
           <div class="project-info">
-            <div class="project-meta"><span class="project-cat">Web App</span><span class="project-stack">React · Node.js · PostgreSQL</span></div>
-            <h3 class="project-name">E-Commerce Platform</h3>
-            <p class="project-desc">Full-stack marketplace with real-time inventory management, Stripe payment integration, analytics dashboard and multi-vendor support.</p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">Demo ↗</a>
-            <a href="#" class="proj-link">Code ↗</a>
+            <div class="project-meta">
+              <span class="project-cat">Data Analysis</span>
+              <span class="project-stack">Excel · Dashboard · Logistics</span>
+            </div>
+            <h3 class="project-name">Shipping Delay &amp; Port Congestion Analysis</h3>
+            <p class="project-desc">Analysed 3 months of vessel schedule data across 5 departure ports (Shanghai, Xiamen, Yantian, Shekou) and 2 Sydney/Melbourne arrival ports. Processed carrier data from 4 platforms, compared delay rates across 30+ vessels, and presented findings via charts and a dashboard to guide logistics planning at Insitu Construction Group.</p>
+            <div class="project-outcome">
+              <span class="outcome-label">Outcome</span>
+              Identified lower-delay port/vessel combinations to support procurement decisions
+            </div>
           </div>
         </article>
-        <article class="project-item reveal d1" data-cat="mobile">
+
+        <article class="project-item reveal d1">
           <div class="project-num">02</div>
           <div class="project-info">
-            <div class="project-meta"><span class="project-cat">Mobile</span><span class="project-stack">React Native · Firebase</span></div>
-            <h3 class="project-name">FitTrack App</h3>
-            <p class="project-desc">Workout tracker with AI-powered recommendations, interactive progress charts, social challenges and wearable device sync.</p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">Demo ↗</a>
-            <a href="#" class="proj-link">Code ↗</a>
+            <div class="project-meta">
+              <span class="project-cat">Business Intelligence</span>
+              <span class="project-stack">Excel · Tableau · NEPSE</span>
+            </div>
+            <h3 class="project-name">Daily PMS Portfolio Reporting — Prabhu Capital</h3>
+            <p class="project-desc">Designed and maintained 10–15 daily portfolio management reports in Excel and Tableau, tracking previous-day performance across Nepal Stock Exchange equities. Reports were used by analysts and client-facing teams to support investment decisions across banking, hydropower and insurance sectors.</p>
+            <div class="project-outcome">
+              <span class="outcome-label">Outcome</span>
+              Consistent daily reporting cadence supporting 200+ active client portfolios
+            </div>
           </div>
         </article>
-        <article class="project-item reveal d2" data-cat="design">
+
+        <article class="project-item reveal d2">
           <div class="project-num">03</div>
           <div class="project-info">
-            <div class="project-meta"><span class="project-cat">Design System</span><span class="project-stack">Figma · Storybook · CSS</span></div>
-            <h3 class="project-name">DesignKit UI</h3>
-            <p class="project-desc">Comprehensive design system with 80+ components, dark mode support, accessibility guidelines and developer documentation.</p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">Demo ↗</a>
-            <a href="#" class="proj-link">Code ↗</a>
+            <div class="project-meta">
+              <span class="project-cat">Field Analytics</span>
+              <span class="project-stack">Tariff Analysis · CRM · Energy</span>
+            </div>
+            <h3 class="project-name">Electricity Tariff Savings Analysis — Energy Australia</h3>
+            <p class="project-desc">Analysed electricity usage patterns and tariff structures across 50+ residential and SME accounts monthly. Identified switching opportunities and structured findings into concise client-ready recommendations, achieving up to 52% savings for customers and ranking as top-performing BDM in NSW.</p>
+            <div class="project-outcome">
+              <span class="outcome-label">Outcome</span>
+              Top BDM in NSW · Best Success Story Award · Consistent Moneyball benchmarks
+            </div>
           </div>
         </article>
-        <article class="project-item reveal d3" data-cat="web">
+
+        <article class="project-item reveal d3">
           <div class="project-num">04</div>
           <div class="project-info">
-            <div class="project-meta"><span class="project-cat">Dashboard</span><span class="project-stack">Vue.js · D3.js · Python</span></div>
-            <h3 class="project-name">DataViz Dashboard</h3>
-            <p class="project-desc">Real-time analytics dashboard with custom visualizations, data pipeline integrations and PDF export functionality.</p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">Demo ↗</a>
-            <a href="#" class="proj-link">Code ↗</a>
-          </div>
-        </article>
-        <article class="project-item reveal d1" data-cat="mobile">
-          <div class="project-num">05</div>
-          <div class="project-info">
-            <div class="project-meta"><span class="project-cat">Mobile</span><span class="project-stack">Flutter · WebSocket · Node.js</span></div>
-            <h3 class="project-name">ChatFlow</h3>
-            <p class="project-desc">End-to-end encrypted messaging with media sharing, group channels, message threading and offline sync.</p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">Demo ↗</a>
-            <a href="#" class="proj-link">Code ↗</a>
+            <div class="project-meta">
+              <span class="project-cat">Community</span>
+              <span class="project-stack">Financial Literacy · Public Speaking</span>
+            </div>
+            <h3 class="project-name">Financial Literacy Initiative — Kathmandu Deaf Association</h3>
+            <p class="project-desc">Contributed to an educational initiative on the Nepali Stock Market for the Kathmandu Deaf Association, educating 50 participants on investment principles, risk management and long-term financial security. Delivered through Prabhu Capital.</p>
+            <div class="project-outcome">
+              <span class="outcome-label">Outcome</span>
+              50 participants equipped with foundational investment knowledge
+            </div>
           </div>
         </article>
-        <article class="project-item reveal d2" data-cat="web">
-          <div class="project-num">06</div>
-          <div class="project-info">
-            <div class="project-meta"><span class="project-cat">Web App</span><span class="project-stack">Next.js · Prisma · Maps API</span></div>
-            <h3 class="project-name">FoodieFind</h3>
-            <p class="project-desc">Restaurant discovery with intelligent recommendations, map-based search, review system and reservation booking.</p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">Demo ↗</a>
-            <a href="#" class="proj-link">Code ↗</a>
-          </div>
-        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certs -->
+  <section id="education" class="section education">
+    <div class="container">
+      <span class="section-label reveal">Education</span>
+      <h2 class="section-heading reveal d1">Qualifications &amp; <em>learning.</em></h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal d1">
+          <span class="edu-year">2026 – Current</span>
+          <h3>Professional Year Program</h3>
+          <span class="edu-inst">ACS / Performance Education · Sydney</span>
+          <p>Agile collaboration, Australian workplace standards, industry networking and career readiness.</p>
+        </div>
+        <div class="edu-card reveal d2">
+          <span class="edu-year">2023 – 2025</span>
+          <h3>Master of Business Analytics</h3>
+          <span class="edu-inst">Macquarie University · Sydney</span>
+          <p>Data visualisation, predictive analysis and business intelligence.</p>
+        </div>
+        <div class="edu-card reveal d3">
+          <span class="edu-year">2018 – 2021</span>
+          <h3>Bachelor of Business Administration</h3>
+          <span class="edu-inst">The British College · Kathmandu</span>
+          <p>Finance, marketing, investment analysis and business strategy.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -268,25 +365,25 @@
   <!-- Contact -->
   <section id="contact" class="section contact">
     <div class="container">
-      <div class="section-label reveal">Contact</div>
+      <span class="section-label reveal">Contact</span>
       <div class="contact-grid">
         <div class="contact-left">
-          <h2 class="section-heading reveal d1">Let's build<br/><em>something.</em></h2>
+          <h2 class="section-heading reveal d1">Let's work<br/><em>together.</em></h2>
           <p class="contact-body reveal d2">
-            Available for freelance projects, full-time roles, and technical consulting. I respond within 24 hours.
+            Available for analyst roles, data projects and consulting. Based in Sydney, open to remote. I reply within 24 hours.
           </p>
           <div class="contact-items reveal d3">
-            <a href="mailto:birat@example.com" class="contact-item">
+            <a href="tel:+61451931530" class="contact-item">
+              <span class="contact-item-label">Phone</span>
+              <span class="contact-item-val">0451 931 530 ↗</span>
+            </a>
+            <a href="mailto:birat-thakali@hotmail.com" class="contact-item">
               <span class="contact-item-label">Email</span>
-              <span class="contact-item-val">birat@example.com ↗</span>
+              <span class="contact-item-val">birat-thakali@hotmail.com ↗</span>
             </a>
-            <a href="https://github.com/birat" target="_blank" class="contact-item">
-              <span class="contact-item-label">GitHub</span>
-              <span class="contact-item-val">github.com/birat ↗</span>
-            </a>
-            <a href="https://linkedin.com/in/birat" target="_blank" class="contact-item">
+            <a href="https://linkedin.com/in/birat-thakali" target="_blank" class="contact-item">
               <span class="contact-item-label">LinkedIn</span>
-              <span class="contact-item-val">linkedin.com/in/birat ↗</span>
+              <span class="contact-item-val">birat-thakali ↗</span>
             </a>
           </div>
         </div>
@@ -303,16 +400,14 @@
           </div>
           <div class="field">
             <label for="fsubject">Subject</label>
-            <input type="text" id="fsubject" placeholder="Project inquiry, collaboration…" />
+            <input type="text" id="fsubject" placeholder="Role inquiry, project, collaboration…" />
           </div>
           <div class="field">
             <label for="fmessage">Message</label>
-            <textarea id="fmessage" rows="5" placeholder="Tell me about your project…" required></textarea>
+            <textarea id="fmessage" rows="5" placeholder="Tell me what you're working on…" required></textarea>
           </div>
           <button type="submit" class="btn-primary submit-btn" id="submitBtn">Send Message</button>
-          <div class="form-success" id="formSuccess">
-            ✓ Message sent — I'll be in touch soon.
-          </div>
+          <div class="form-success" id="formSuccess">✓ Sent — I'll get back to you soon.</div>
         </form>
       </div>
     </div>
@@ -321,12 +416,11 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <span class="footer-logo">Birat<span class="logo-dot">.</span></span>
-      <span class="footer-copy">© 2025 Birat. All rights reserved.</span>
+      <span class="footer-logo">Birat Thakali<span class="logo-dot">.</span></span>
+      <span class="footer-copy">© 2025 · Business &amp; Data Analyst · Sydney, AU</span>
       <div class="footer-links">
-        <a href="https://github.com/birat" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/birat" target="_blank">LinkedIn</a>
-        <a href="mailto:birat@example.com">Email</a>
+        <a href="https://linkedin.com/in/birat-thakali" target="_blank">LinkedIn</a>
+        <a href="mailto:birat-thakali@hotmail.com">Email</a>
       </div>
     </div>
   </footer>
