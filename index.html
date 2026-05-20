@@ -1,390 +1,337 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Birat — Portfolio</title>
+  <title>Birat — Developer & Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav-rail" id="navRail">
-    <div class="nav-brand">
-      <span class="brand-letter">B</span>
+  <!-- Top Navigation -->
+  <nav class="topnav" id="topnav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Birat<span class="logo-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+          <span id="themeIcon">☀</span>
+        </button>
+        <a href="#contact" class="nav-cta">Hire me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-    <ul class="nav-items">
-      <li><a href="#hero" class="nav-link active" data-section="hero"><span class="material-icons-round">home</span><span class="nav-label">Home</span></a></li>
-      <li><a href="#about" class="nav-link" data-section="about"><span class="material-icons-round">person</span><span class="nav-label">About</span></a></li>
-      <li><a href="#skills" class="nav-link" data-section="skills"><span class="material-icons-round">bolt</span><span class="nav-label">Skills</span></a></li>
-      <li><a href="#projects" class="nav-link" data-section="projects"><span class="material-icons-round">work</span><span class="nav-label">Projects</span></a></li>
-      <li><a href="#contact" class="nav-link" data-section="contact"><span class="material-icons-round">mail</span><span class="nav-label">Contact</span></a></li>
-    </ul>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-      <span class="material-icons-round" id="themeIcon">dark_mode</span>
-    </button>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mob-link">About</a>
+      <a href="#skills" class="mob-link">Skills</a>
+      <a href="#projects" class="mob-link">Projects</a>
+      <a href="#contact" class="mob-link">Contact</a>
+      <a href="#contact" class="mob-link mob-cta">Hire me</a>
+    </div>
   </nav>
 
-  <!-- Mobile Top Bar -->
-  <header class="mobile-header">
-    <span class="brand-letter-sm">B</span>
-    <span class="mobile-title">Birat</span>
-    <button class="theme-toggle-mobile" id="themeToggleMobile" aria-label="Toggle theme">
-      <span class="material-icons-round" id="themeIconMobile">dark_mode</span>
-    </button>
-  </header>
-
-  <!-- Main Content -->
-  <main class="main-content">
-
-    <!-- Hero Section -->
-    <section id="hero" class="section hero-section">
-      <div class="hero-blob blob-1"></div>
-      <div class="hero-blob blob-2"></div>
-      <div class="hero-inner">
-        <div class="hero-chip reveal">
-          <span class="material-icons-round chip-icon">circle</span>
-          Available for work
-        </div>
-        <h1 class="hero-name reveal delay-1">Hi, I'm <em>Birat</em></h1>
-        <p class="hero-tagline reveal delay-2">Full-Stack Developer &amp; Creative Technologist</p>
-        <p class="hero-desc reveal delay-3">I build beautiful, performant web experiences that blend design precision with engineering excellence.</p>
-        <div class="hero-actions reveal delay-4">
-          <a href="#projects" class="btn btn-filled">
-            <span class="material-icons-round">arrow_downward</span>
-            View Work
-          </a>
-          <a href="#contact" class="btn btn-tonal">
-            <span class="material-icons-round">mail_outline</span>
-            Get in Touch
-          </a>
-        </div>
-        <div class="hero-stats reveal delay-5">
-          <div class="stat-card">
-            <span class="stat-number" data-count="3">0</span><span class="stat-suffix">+</span>
-            <span class="stat-label">Years Exp.</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-card">
-            <span class="stat-number" data-count="20">0</span><span class="stat-suffix">+</span>
-            <span class="stat-label">Projects</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-card">
-            <span class="stat-number" data-count="15">0</span><span class="stat-suffix">+</span>
-            <span class="stat-label">Clients</span>
-          </div>
-        </div>
+  <!-- Hero -->
+  <section id="hero" class="section hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Open to opportunities
       </div>
-      <div class="hero-avatar reveal delay-2">
-        <div class="avatar-ring"></div>
-        <div class="avatar-circle">
-          <span class="avatar-initials">B</span>
-        </div>
-        <div class="avatar-badge">
-          <span class="material-icons-round">code</span>
-        </div>
+      <h1 class="hero-heading reveal d1">
+        <span class="line">Full-Stack</span>
+        <span class="line accent">Developer</span>
+        <span class="line">& Designer</span>
+      </h1>
+      <p class="hero-sub reveal d2">
+        I craft precise, performant digital products — from concept to deployment. Based in Kathmandu, working globally.
+      </p>
+      <div class="hero-actions reveal d3">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Let's talk →</a>
       </div>
-    </section>
+    </div>
+    <div class="hero-metrics reveal d2">
+      <div class="metric">
+        <span class="metric-num" data-count="3">0</span><span class="metric-unit">yr</span>
+        <span class="metric-label">Experience</span>
+      </div>
+      <div class="metric-sep"></div>
+      <div class="metric">
+        <span class="metric-num" data-count="20">0</span><span class="metric-unit">+</span>
+        <span class="metric-label">Projects</span>
+      </div>
+      <div class="metric-sep"></div>
+      <div class="metric">
+        <span class="metric-num" data-count="15">0</span><span class="metric-unit">+</span>
+        <span class="metric-label">Clients</span>
+      </div>
+    </div>
+    <div class="scroll-hint reveal d4">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-      <div class="section-header reveal">
-        <span class="section-label">About Me</span>
-        <h2 class="section-title">Crafting digital <em>experiences</em></h2>
-      </div>
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-label reveal">About</div>
       <div class="about-grid">
-        <div class="about-text reveal delay-1">
-          <p>I'm a passionate developer who loves turning complex problems into elegant, user-friendly solutions. My approach blends technical precision with creative thinking.</p>
-          <p>When I'm not coding, I explore UI/UX trends, contribute to open-source, and mentor aspiring developers in my community.</p>
-          <div class="about-chips">
-            <span class="info-chip"><span class="material-icons-round">location_on</span> Kathmandu, Nepal</span>
-            <span class="info-chip"><span class="material-icons-round">school</span> BSc Computer Science</span>
-            <span class="info-chip"><span class="material-icons-round">coffee</span> Coffee-driven dev</span>
-          </div>
+        <div class="about-left reveal d1">
+          <h2 class="section-heading">Engineering<br/><em>with intent.</em></h2>
         </div>
-        <div class="about-cards reveal delay-2">
-          <div class="about-card surface-card">
-            <span class="material-icons-round card-icon">design_services</span>
-            <h3>Design-First</h3>
-            <p>I believe great software starts with great design. UX is never an afterthought.</p>
+        <div class="about-right">
+          <p class="about-body reveal d2">
+            I'm Birat — a full-stack developer who obsesses over the intersection of clean code and compelling design. I've shipped products used by thousands, built design systems from scratch, and collaborated with startups across three continents.
+          </p>
+          <p class="about-body reveal d3">
+            My background in computer science grounds every project in solid architecture, while a deep interest in visual communication ensures the result is never just functional — it's beautiful.
+          </p>
+          <div class="about-tags reveal d4">
+            <span class="tag">Kathmandu, NP</span>
+            <span class="tag">BSc Computer Science</span>
+            <span class="tag">Available remotely</span>
           </div>
-          <div class="about-card surface-card">
-            <span class="material-icons-round card-icon">speed</span>
-            <h3>Performance</h3>
-            <p>Every millisecond matters. I optimize for speed without sacrificing quality.</p>
-          </div>
-          <div class="about-card surface-card">
-            <span class="material-icons-round card-icon">diversity_3</span>
-            <h3>Collaborative</h3>
-            <p>I thrive in teams and communicate clearly with both designers and stakeholders.</p>
-          </div>
-          <div class="about-card surface-card">
-            <span class="material-icons-round card-icon">auto_awesome</span>
-            <h3>Detail-Oriented</h3>
-            <p>The difference between good and great is in the details. I sweat them all.</p>
+          <div class="about-values reveal d5">
+            <div class="value-item">
+              <div class="value-num">01</div>
+              <div>
+                <strong>Design-led engineering</strong>
+                <p>Good design isn't decoration — it's function.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-num">02</div>
+              <div>
+                <strong>Performance by default</strong>
+                <p>Fast is a feature. I optimize from the start.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-num">03</div>
+              <div>
+                <strong>Clear communication</strong>
+                <p>Code and people both need good documentation.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
-      <div class="section-header reveal">
-        <span class="section-label">Skills</span>
-        <h2 class="section-title">Tools of the <em>trade</em></h2>
-      </div>
-      <div class="skills-tabs reveal delay-1">
-        <button class="tab-btn active" data-tab="frontend">Frontend</button>
-        <button class="tab-btn" data-tab="backend">Backend</button>
-        <button class="tab-btn" data-tab="tools">Tools</button>
-      </div>
-      <div class="skills-content">
-        <div class="tab-panel active" id="tab-frontend">
-          <div class="skill-bars">
-            <div class="skill-item reveal">
-              <div class="skill-meta"><span>HTML / CSS</span><span class="skill-pct">95%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
-            </div>
-            <div class="skill-item reveal delay-1">
-              <div class="skill-meta"><span>JavaScript</span><span class="skill-pct">88%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
-            </div>
-            <div class="skill-item reveal delay-2">
-              <div class="skill-meta"><span>React</span><span class="skill-pct">82%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
-            </div>
-            <div class="skill-item reveal delay-3">
-              <div class="skill-meta"><span>Vue.js</span><span class="skill-pct">70%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
-            </div>
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-label reveal">Expertise</div>
+      <h2 class="section-heading reveal d1">Stack &amp; <em>skills.</em></h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal d1">
+          <div class="skill-group-label">Frontend</div>
+          <div class="skill-list">
+            <div class="skill-row"><span>HTML / CSS</span><div class="skill-bar"><div class="skill-fill" data-w="95"></div></div><span class="skill-pct">95%</span></div>
+            <div class="skill-row"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div><span class="skill-pct">88%</span></div>
+            <div class="skill-row"><span>React</span><div class="skill-bar"><div class="skill-fill" data-w="83"></div></div><span class="skill-pct">83%</span></div>
+            <div class="skill-row"><span>Vue.js</span><div class="skill-bar"><div class="skill-fill" data-w="70"></div></div><span class="skill-pct">70%</span></div>
           </div>
         </div>
-        <div class="tab-panel" id="tab-backend">
-          <div class="skill-bars">
-            <div class="skill-item reveal">
-              <div class="skill-meta"><span>Node.js</span><span class="skill-pct">80%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
-            </div>
-            <div class="skill-item reveal delay-1">
-              <div class="skill-meta"><span>Python</span><span class="skill-pct">75%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
-            </div>
-            <div class="skill-item reveal delay-2">
-              <div class="skill-meta"><span>PostgreSQL</span><span class="skill-pct">72%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="72"></div></div>
-            </div>
-            <div class="skill-item reveal delay-3">
-              <div class="skill-meta"><span>REST APIs</span><span class="skill-pct">90%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
-            </div>
+        <div class="skill-group reveal d2">
+          <div class="skill-group-label">Backend</div>
+          <div class="skill-list">
+            <div class="skill-row"><span>Node.js</span><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div><span class="skill-pct">80%</span></div>
+            <div class="skill-row"><span>Python</span><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div><span class="skill-pct">75%</span></div>
+            <div class="skill-row"><span>PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-w="72"></div></div><span class="skill-pct">72%</span></div>
+            <div class="skill-row"><span>REST APIs</span><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div><span class="skill-pct">90%</span></div>
           </div>
         </div>
-        <div class="tab-panel" id="tab-tools">
-          <div class="skill-bars">
-            <div class="skill-item reveal">
-              <div class="skill-meta"><span>Git / GitHub</span><span class="skill-pct">92%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="92"></div></div>
-            </div>
-            <div class="skill-item reveal delay-1">
-              <div class="skill-meta"><span>Figma</span><span class="skill-pct">78%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="78"></div></div>
-            </div>
-            <div class="skill-item reveal delay-2">
-              <div class="skill-meta"><span>Docker</span><span class="skill-pct">65%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="65"></div></div>
-            </div>
-            <div class="skill-item reveal delay-3">
-              <div class="skill-meta"><span>Firebase</span><span class="skill-pct">74%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-width="74"></div></div>
-            </div>
+        <div class="skill-group reveal d3">
+          <div class="skill-group-label">Tools</div>
+          <div class="skill-list">
+            <div class="skill-row"><span>Git / GitHub</span><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div><span class="skill-pct">92%</span></div>
+            <div class="skill-row"><span>Figma</span><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div><span class="skill-pct">78%</span></div>
+            <div class="skill-row"><span>Docker</span><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div><span class="skill-pct">65%</span></div>
+            <div class="skill-row"><span>Firebase</span><div class="skill-bar"><div class="skill-fill" data-w="74"></div></div><span class="skill-pct">74%</span></div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="tech-pills reveal d4">
+        <span class="pill">TypeScript</span><span class="pill">Next.js</span><span class="pill">Tailwind CSS</span>
+        <span class="pill">GraphQL</span><span class="pill">Prisma</span><span class="pill">AWS</span>
+        <span class="pill">Redis</span><span class="pill">Vercel</span><span class="pill">Webpack</span>
+        <span class="pill">Jest</span><span class="pill">Cypress</span><span class="pill">Linux</span>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects-section">
-      <div class="section-header reveal">
-        <span class="section-label">Projects</span>
-        <h2 class="section-title">Selected <em>work</em></h2>
-      </div>
-      <div class="project-filter reveal delay-1">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="mobile">Mobile</button>
-        <button class="filter-btn" data-filter="design">Design</button>
-      </div>
-      <div class="projects-grid">
-        <div class="project-card reveal" data-category="web">
-          <div class="project-thumb" style="--hue: 220deg;">
-            <span class="material-icons-round project-icon">shopping_cart</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">React</span><span class="tag">Node.js</span>
-            </div>
-            <h3 class="project-title">E-Commerce Platform</h3>
-            <p class="project-desc">A full-stack marketplace with real-time inventory, payment integration, and admin dashboard.</p>
-            <div class="project-actions">
-              <a href="#" class="btn-text"><span class="material-icons-round">open_in_new</span> Live Demo</a>
-              <a href="#" class="btn-text"><span class="material-icons-round">code</span> Source</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card reveal delay-1" data-category="mobile">
-          <div class="project-thumb" style="--hue: 160deg;">
-            <span class="material-icons-round project-icon">fitness_center</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">React Native</span><span class="tag">Firebase</span>
-            </div>
-            <h3 class="project-title">FitTrack App</h3>
-            <p class="project-desc">Mobile workout tracker with AI-driven suggestions, progress charts and social challenges.</p>
-            <div class="project-actions">
-              <a href="#" class="btn-text"><span class="material-icons-round">open_in_new</span> Live Demo</a>
-              <a href="#" class="btn-text"><span class="material-icons-round">code</span> Source</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card reveal delay-2" data-category="design">
-          <div class="project-thumb" style="--hue: 290deg;">
-            <span class="material-icons-round project-icon">palette</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">Figma</span><span class="tag">Design System</span>
-            </div>
-            <h3 class="project-title">DesignKit UI</h3>
-            <p class="project-desc">A comprehensive design system with 80+ components, dark mode and accessibility baked in.</p>
-            <div class="project-actions">
-              <a href="#" class="btn-text"><span class="material-icons-round">open_in_new</span> Live Demo</a>
-              <a href="#" class="btn-text"><span class="material-icons-round">code</span> Source</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card reveal delay-1" data-category="web">
-          <div class="project-thumb" style="--hue: 30deg;">
-            <span class="material-icons-round project-icon">analytics</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">Vue.js</span><span class="tag">D3.js</span>
-            </div>
-            <h3 class="project-title">DataViz Dashboard</h3>
-            <p class="project-desc">Interactive analytics dashboard with real-time data, custom charts and export capabilities.</p>
-            <div class="project-actions">
-              <a href="#" class="btn-text"><span class="material-icons-round">open_in_new</span> Live Demo</a>
-              <a href="#" class="btn-text"><span class="material-icons-round">code</span> Source</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card reveal delay-2" data-category="mobile">
-          <div class="project-thumb" style="--hue: 190deg;">
-            <span class="material-icons-round project-icon">chat</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">Flutter</span><span class="tag">WebSocket</span>
-            </div>
-            <h3 class="project-title">ChatFlow</h3>
-            <p class="project-desc">Real-time messaging app with end-to-end encryption, media sharing and group channels.</p>
-            <div class="project-actions">
-              <a href="#" class="btn-text"><span class="material-icons-round">open_in_new</span> Live Demo</a>
-              <a href="#" class="btn-text"><span class="material-icons-round">code</span> Source</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card reveal delay-3" data-category="web">
-          <div class="project-thumb" style="--hue: 350deg;">
-            <span class="material-icons-round project-icon">restaurant</span>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">Next.js</span><span class="tag">Prisma</span>
-            </div>
-            <h3 class="project-title">FoodieFind</h3>
-            <p class="project-desc">Restaurant discovery platform with maps integration, reviews, and AI-powered recommendations.</p>
-            <div class="project-actions">
-              <a href="#" class="btn-text"><span class="material-icons-round">open_in_new</span> Live Demo</a>
-              <a href="#" class="btn-text"><span class="material-icons-round">code</span> Source</a>
-            </div>
-          </div>
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-label reveal">Work</div>
+      <div class="projects-header">
+        <h2 class="section-heading reveal d1">Selected <em>projects.</em></h2>
+        <div class="project-filter reveal d2">
+          <button class="f-btn active" data-filter="all">All</button>
+          <button class="f-btn" data-filter="web">Web</button>
+          <button class="f-btn" data-filter="mobile">Mobile</button>
+          <button class="f-btn" data-filter="design">Design</button>
         </div>
       </div>
-    </section>
+      <div class="projects-list" id="projectsList">
+        <article class="project-item reveal" data-cat="web">
+          <div class="project-num">01</div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-cat">Web App</span><span class="project-stack">React · Node.js · PostgreSQL</span></div>
+            <h3 class="project-name">E-Commerce Platform</h3>
+            <p class="project-desc">Full-stack marketplace with real-time inventory management, Stripe payment integration, analytics dashboard and multi-vendor support.</p>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Demo ↗</a>
+            <a href="#" class="proj-link">Code ↗</a>
+          </div>
+        </article>
+        <article class="project-item reveal d1" data-cat="mobile">
+          <div class="project-num">02</div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-cat">Mobile</span><span class="project-stack">React Native · Firebase</span></div>
+            <h3 class="project-name">FitTrack App</h3>
+            <p class="project-desc">Workout tracker with AI-powered recommendations, interactive progress charts, social challenges and wearable device sync.</p>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Demo ↗</a>
+            <a href="#" class="proj-link">Code ↗</a>
+          </div>
+        </article>
+        <article class="project-item reveal d2" data-cat="design">
+          <div class="project-num">03</div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-cat">Design System</span><span class="project-stack">Figma · Storybook · CSS</span></div>
+            <h3 class="project-name">DesignKit UI</h3>
+            <p class="project-desc">Comprehensive design system with 80+ components, dark mode support, accessibility guidelines and developer documentation.</p>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Demo ↗</a>
+            <a href="#" class="proj-link">Code ↗</a>
+          </div>
+        </article>
+        <article class="project-item reveal d3" data-cat="web">
+          <div class="project-num">04</div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-cat">Dashboard</span><span class="project-stack">Vue.js · D3.js · Python</span></div>
+            <h3 class="project-name">DataViz Dashboard</h3>
+            <p class="project-desc">Real-time analytics dashboard with custom visualizations, data pipeline integrations and PDF export functionality.</p>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Demo ↗</a>
+            <a href="#" class="proj-link">Code ↗</a>
+          </div>
+        </article>
+        <article class="project-item reveal d1" data-cat="mobile">
+          <div class="project-num">05</div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-cat">Mobile</span><span class="project-stack">Flutter · WebSocket · Node.js</span></div>
+            <h3 class="project-name">ChatFlow</h3>
+            <p class="project-desc">End-to-end encrypted messaging with media sharing, group channels, message threading and offline sync.</p>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Demo ↗</a>
+            <a href="#" class="proj-link">Code ↗</a>
+          </div>
+        </article>
+        <article class="project-item reveal d2" data-cat="web">
+          <div class="project-num">06</div>
+          <div class="project-info">
+            <div class="project-meta"><span class="project-cat">Web App</span><span class="project-stack">Next.js · Prisma · Maps API</span></div>
+            <h3 class="project-name">FoodieFind</h3>
+            <p class="project-desc">Restaurant discovery with intelligent recommendations, map-based search, review system and reservation booking.</p>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">Demo ↗</a>
+            <a href="#" class="proj-link">Code ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-      <div class="section-header reveal">
-        <span class="section-label">Contact</span>
-        <h2 class="section-title">Let's <em>connect</em></h2>
-      </div>
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label reveal">Contact</div>
       <div class="contact-grid">
-        <div class="contact-info reveal delay-1">
-          <p class="contact-intro">Have a project in mind or just want to say hello? I'm always open to new opportunities and interesting conversations.</p>
-          <div class="contact-links">
-            <a href="mailto:birat@example.com" class="contact-link-card">
-              <span class="material-icons-round">mail</span>
-              <div><strong>Email</strong><span>birat@example.com</span></div>
-              <span class="material-icons-round arrow">arrow_forward</span>
+        <div class="contact-left">
+          <h2 class="section-heading reveal d1">Let's build<br/><em>something.</em></h2>
+          <p class="contact-body reveal d2">
+            Available for freelance projects, full-time roles, and technical consulting. I respond within 24 hours.
+          </p>
+          <div class="contact-items reveal d3">
+            <a href="mailto:birat@example.com" class="contact-item">
+              <span class="contact-item-label">Email</span>
+              <span class="contact-item-val">birat@example.com ↗</span>
             </a>
-            <a href="https://github.com/birat" target="_blank" class="contact-link-card">
-              <span class="material-icons-round">code</span>
-              <div><strong>GitHub</strong><span>github.com/birat</span></div>
-              <span class="material-icons-round arrow">arrow_forward</span>
+            <a href="https://github.com/birat" target="_blank" class="contact-item">
+              <span class="contact-item-label">GitHub</span>
+              <span class="contact-item-val">github.com/birat ↗</span>
             </a>
-            <a href="https://linkedin.com/in/birat" target="_blank" class="contact-link-card">
-              <span class="material-icons-round">work</span>
-              <div><strong>LinkedIn</strong><span>linkedin.com/in/birat</span></div>
-              <span class="material-icons-round arrow">arrow_forward</span>
+            <a href="https://linkedin.com/in/birat" target="_blank" class="contact-item">
+              <span class="contact-item-label">LinkedIn</span>
+              <span class="contact-item-val">linkedin.com/in/birat ↗</span>
             </a>
           </div>
         </div>
-        <form class="contact-form surface-card reveal delay-2" id="contactForm" novalidate>
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name" required />
+        <form class="contact-form reveal d2" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" placeholder="your@email.com" required />
+            </div>
           </div>
           <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="your@email.com" required />
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" placeholder="Project inquiry, collaboration…" />
           </div>
           <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" rows="5" placeholder="Tell me about your project…" required></textarea>
           </div>
-          <button type="submit" class="btn btn-filled full-width">
-            <span class="material-icons-round">send</span>
-            Send Message
-          </button>
+          <button type="submit" class="btn-primary submit-btn" id="submitBtn">Send Message</button>
           <div class="form-success" id="formSuccess">
-            <span class="material-icons-round">check_circle</span>
-            Message sent! I'll get back to you soon.
+            ✓ Message sent — I'll be in touch soon.
           </div>
         </form>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Birat<span class="logo-dot">.</span></span>
+      <span class="footer-copy">© 2025 Birat. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="https://github.com/birat" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/birat" target="_blank">LinkedIn</a>
+        <a href="mailto:birat@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
 
-  <!-- Mobile Nav Bar -->
-  <nav class="mobile-nav">
-    <a href="#hero" class="mnav-link active" data-section="hero"><span class="material-icons-round">home</span></a>
-    <a href="#about" class="mnav-link" data-section="about"><span class="material-icons-round">person</span></a>
-    <a href="#skills" class="mnav-link" data-section="skills"><span class="material-icons-round">bolt</span></a>
-    <a href="#projects" class="mnav-link" data-section="projects"><span class="material-icons-round">work</span></a>
-    <a href="#contact" class="mnav-link" data-section="contact"><span class="material-icons-round">mail</span></a>
-  </nav>
-
-  <!-- Snackbar -->
   <div class="snackbar" id="snackbar"></div>
-
   <script src="script.js"></script>
 </body>
 </html>
