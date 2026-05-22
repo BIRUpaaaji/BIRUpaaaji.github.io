@@ -625,7 +625,33 @@ body {
   border-radius:4px;
   background:var(--accent-d2);
 }
-.form-success.show { display:block; }
+.form-success.show, [data-fs-success]:not(:empty) { display:block; }
+
+.form-error {
+  display:none;
+  font-size:13px;
+  color:#ff5555;
+  padding:12px 14px;
+  border:1px solid rgba(255,85,85,0.2);
+  border-radius:4px;
+  background:rgba(255,85,85,0.06);
+}
+[data-fs-error]:not(:empty) { display:block; }
+
+.field-error {
+  font-size:12px;
+  color:#ff5555;
+  margin-top:4px;
+  display:block;
+  min-height:16px;
+}
+
+/* Formspree disables submit btn — style the disabled state */
+.submit-btn:disabled {
+  opacity:.5;
+  cursor:not-allowed;
+  transform:none;
+}
 
 /* ── FOOTER ── */
 .footer { border-top:1px solid var(--border); padding:28px 0; }

@@ -388,26 +388,36 @@
           </div>
         </div>
         <form class="contact-form reveal d2" id="contactForm" novalidate>
+          <!-- Formspree success message -->
+          <div data-fs-success class="form-success" id="formSuccess">
+            ✓ Message received — I'll get back to you within 24 hours.
+          </div>
+          <!-- Formspree global error message -->
+          <div data-fs-error class="form-error" id="formError"></div>
+
           <div class="form-row">
             <div class="field">
               <label for="fname">Name</label>
-              <input type="text" id="fname" name="from_name" placeholder="Your name" required />
+              <input type="text" id="fname" name="name" placeholder="Your name" required data-fs-field />
+              <span class="field-error" data-fs-error="name"></span>
             </div>
             <div class="field">
               <label for="femail">Email</label>
-              <input type="email" id="femail" name="reply_to" placeholder="your@email.com" required />
+              <input type="email" id="femail" name="email" placeholder="your@email.com" required data-fs-field />
+              <span class="field-error" data-fs-error="email"></span>
             </div>
           </div>
           <div class="field">
             <label for="fsubject">Subject</label>
-            <input type="text" id="fsubject" name="subject" placeholder="Role inquiry, project, collaboration…" />
+            <input type="text" id="fsubject" name="subject" placeholder="Role inquiry, project, collaboration…" data-fs-field />
+            <span class="field-error" data-fs-error="subject"></span>
           </div>
           <div class="field">
             <label for="fmessage">Message</label>
-            <textarea id="fmessage" name="message" rows="5" placeholder="Tell me what you're working on…" required></textarea>
+            <textarea id="fmessage" name="message" rows="5" placeholder="Tell me what you're working on…" required data-fs-field></textarea>
+            <span class="field-error" data-fs-error="message"></span>
           </div>
-          <button type="submit" class="btn-primary submit-btn" id="submitBtn">Send Message</button>
-          <div class="form-success" id="formSuccess">✓ Sent — I'll get back to you soon.</div>
+          <button type="submit" class="btn-primary submit-btn" id="submitBtn" data-fs-submit-btn>Send Message</button>
         </form>
       </div>
     </div>
@@ -425,6 +435,14 @@
   </footer>
 
   <div class="snackbar" id="snackbar"></div>
+
+  <!-- Formspree Ajax -->
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contactForm', formId: 'mqejqjvp' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
   <script src="script.js"></script>
 </body>
 </html>
