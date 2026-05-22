@@ -89,17 +89,37 @@ document.querySelectorAll('.skill-fill').forEach(f => skillObs.observe(f));
 
 // Copy email to clipboard
 function copyEmail() {
-  navigator.clipboard.writeText('birat-thakali@hotmail.com').then(() => {
-    const btn = document.getElementById('emailCopyBtn');
-    const txt = document.getElementById('emailCopyText');
-    txt.textContent = '✓ Copied to clipboard!';
+  const email = 'birat-thakali@hotmail.com';
+  const btn = document.getElementById('emailCopyBtn');
+  const txt = document.getElementById('emailCopyText');
+
+  const success = () => {
+    txt.textContent = '✓ Copied!';
     btn.classList.add('copied');
     setTimeout(() => {
       txt.textContent = 'birat-thakali@hotmail.com ⧉';
       btn.classList.remove('copied');
     }, 2500);
-    snack('Email address copied!');
-  });
+    snack('Email address copied to clipboard!');
+  };
+
+  // Modern clipboard API
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(email).then(success).catch(() => fallbackCopy(email, success));
+  } else {
+    fallbackCopy(email, success);
+  }
+}
+
+function fallbackCopy(text, callback) {
+  const el = document.createElement('textarea');
+  el.value = text;
+  el.style.cssText = 'position:fixed;top:-9999px;left:-9999px;opacity:0;';
+  document.body.appendChild(el);
+  el.focus();
+  el.select();
+  try { document.execCommand('copy'); callback(); } catch(e) {}
+  document.body.removeChild(el);
 }
 
 // Snackbar
